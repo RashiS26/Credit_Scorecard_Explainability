@@ -6,7 +6,7 @@ To build a machine learning system that predicts the probability of a borrower d
 ## Features
 * **Real-world large-scale data** — trained on 890,000 actual Lending Club loan records with 150 features, not synthetic data.
 * **Robust ML pipeline with imbalance handling** — full cleaning + feature engineering pipeline, with SMOTE applied to fix the 80/20 class imbalance between non-defaulters and defaulters.
-* **Multi-model benchmarking** — compares Logistic Regression, Random Forest, and XGBoost using industry-standard metrics (AUC-ROC, KS Statistic), with XGBoost selected as the best performer (AUC ~0.91).
+* **Multi-model benchmarking** — compares Logistic Regression, Random Forest, and XGBoost using industry-standard metrics (AUC-ROC, KS Statistic), with XGBoost selected as the best performer (AUC ~0.74).
 * **Explainable AI with SHAP** — every prediction comes with both global feature importance and per-applicant waterfall explanations, aligned with SR 11-7 regulatory standards.
 * **Interactive deployed app** — a Streamlit-based loan decision simulator where users input borrower details and instantly get a default probability, risk tier, and visual explanation.
 ---
@@ -39,13 +39,6 @@ streamlit run src/app.py
 - AUC-ROC: ~0.738
 - KS Statistic: ~0.35
 - Models compared: Logistic Regression, Random Forest, XGBoost
-
-## Demo Video
-<video
-    src="credit_scorecard/outout/plot/Recording.mp4"
-    controls
-    width="800">
-</video>
 
 ## Dataset
 Dataset not included due to GitHub size limits.
